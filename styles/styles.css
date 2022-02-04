@@ -141,7 +141,8 @@
     margin: 0 auto;
     margin-bottom: 25px;
     
-    background-image: url("../images/welcome.png");       
+    
+    background-image: url("../images/welcome.png");          
     background-size: 100% auto;    
     background-repeat: no-repeat;
     
@@ -190,7 +191,7 @@
   }
 
   .advantages-item:nth-child(1)  {
-    background-color: #83B3D3;
+    background-color: hsl(204, 48%, 67%);
     color: #FFFFFF;
   }
 
@@ -454,6 +455,7 @@
 }
 
 .select-control option {
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
