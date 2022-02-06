@@ -20,7 +20,7 @@
     line-height: 21px;
 
     color: #000000;
-    background-color: #ffffff;    
+    background-color: #ffffff; 
   }
 
   /*Buttons*/
@@ -52,8 +52,7 @@
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
-    display: flex;
-    align-items: center;
+    
     text-align: center;
     text-transform: uppercase;
 
@@ -141,11 +140,9 @@
     margin: 0 auto;
     margin-bottom: 25px;
     
-    
     background-image: url("../images/welcome.png");          
     background-size: 100% auto;    
-    background-repeat: no-repeat;
-    
+    background-repeat: no-repeat;    
   }
 
   .index-background-bottomline {
@@ -538,6 +535,14 @@
 
 /*Subscribe*/
 
+.subscribe-index {
+  color:#ffffff;
+}
+
+.subscribe-catalog {
+  color:#000000;
+}
+
 .subscribe h2 {
   font-style: normal;
   font-weight: bold;
@@ -546,7 +551,7 @@
 
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+  color: inherit;
 }
 
 .subscribe p {
@@ -554,9 +559,11 @@
   font-weight: normal;
   font-size: 22px;
   line-height: 26px;
-  
-  text-align: center;
-
-  color: #333333;
+    
+  text-align: center;  
 }  
+
+.subscribe-catalog p {
+  color: #333333;
+}
   
