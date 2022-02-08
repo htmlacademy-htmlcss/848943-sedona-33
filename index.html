@@ -3,9 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
+      <a href="#">
+      <img class="logo" src="images/logo.svg" alt="Логотип компании." width="139" height="70">
+      </a>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -32,21 +36,24 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-button button-brown" href="#">Хочу сюда!</a>
+            <a class="navigation-link-button button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-index">
+      <div class="index-background">
+        <div class="index-background-welcome">
+          <img src="images/welcome.png" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!" width="458" height="352">
+        </div>
+        <div class="index-background-bottomline"></div>
+      </div>
       <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-      <a href="#">
-        <img class="logo" src="images/logo.svg" alt="Логотип компании." width="139" height="70">
-      </a>
       <section class="advantages">
         <h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</h2>
         <ul class="advantages-list">
-          <li class="advantages-item">
-            <h3 class="advantages-title advantages-1">
+          <li class="advantages-item ">
+            <h3 class="advantages-title">
               <!--Номер пункта списка становится виден при стилизации-->
               <span class="advantages-number" hidden>№1</span>
               Настоящий городок
@@ -54,8 +61,8 @@
             <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <img src="images/advantages-1.jpg" alt="Улочки Седоны." width="800" height="384">
           </li>
-          <li class="advantages-item">
-            <h3 class="advantages-title  advantages-2">
+          <li class="advantages-item ">
+            <h3 class="advantages-title">
               <span class="advantages-number" hidden>№2</span>
               Там есть мост дьявола
             </h3>
@@ -63,21 +70,21 @@
             <img src="images/advantages-2.jpg" alt="Мост Дьявола." width="800" height="384">
           </li>
           <li class="advantages-item">
-            <h3 class="advantages-title  advantages-3">
+            <h3 class="advantages-title">
               <span class="advantages-number" hidden>№3</span>
               Небольшая площадь
             </h3>
             <p class="advantages-description">Все достопримечательности находятся очень близко</p>
           </li>
           <li class="advantages-item">
-            <h3 class="advantages-title  advantages-4">
+            <h3 class="advantages-title">
               <span class="advantages-number" hidden>№4</span>
               Красивая дорога
             </h3>
             <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="advantages-item">
-            <h3 class="advantages-title  advantages-5">
+            <h3 class="advantages-title">
               <span class="advantages-number" hidden>№5</span>
               Мало туристов
             </h3>
@@ -106,15 +113,16 @@
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
         <p class="hotel-search-header" hidden>Заинтересовались?</p>
         <p class="hotel-search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="hotel-search-link button-brown" href="#">Поиск гостиницы в Седоне</a>
+        <div class="hotel-search-button">
+          <a class="hotel-search-link" href="catalog.html">Поиск гостиницы в Седоне</a>
+        </div>
       </section>
       <section class="subscribe subscribe-index">
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-          <label for="subscribe-email-index">Ваш e-mail</label>
-          <input type="email" name="subscribe-email" id="subscribe-email-index">
-          <button class="button-blue" type="submit">Подписаться</button>
+          <input type="email" name="subscribe-email" id="subscribe-email-index" placeholder="Ваш e-mail">
+          <button class="button subscribe-form-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
@@ -123,17 +131,17 @@
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button" href="#">
+            <a class="footer-social-button twitter" href="#">
             <span class="visually-hidden">Twitter</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="#">
+            <a class="footer-social-button facebook" href="#">
             <span class="visually-hidden">Facebook</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="#">
+            <a class="footer-social-button youtube" href="#">
             <span class="visually-hidden">Youtube</span>
             </a>
           </li>
@@ -146,9 +154,10 @@
       <section class="footer-copyright">
         <h2 class="visually-hidden">Copyright</h2>
         <p class="visually-hidden">Разработчик сайта - 
-          <a class="htmlacademy-link" href="https://htmlacademy.ru/">HTML Academy</a>
+          <a class="htmlacademy-link" href="https://htmlacademy.ru/">HTML Academy
+          <img class="footer-copyright-logo" src="images/logo-htmlacademy.svg"  alt="Логотип HTML Academy." width="115" height="34">
+          </a>
         </p>
-        <img class="footer-copyright-logo" src="images/logo-htmlacademy.svg" alt="Логотип HTML Academy">
       </section>
     </footer>
   </body>
