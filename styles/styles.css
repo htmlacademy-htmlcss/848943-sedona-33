@@ -16,11 +16,9 @@
 
 html {
   height: 100%;
- 
 }
 
 body {
-  
   margin: 0;
   height: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -28,21 +26,15 @@ body {
   line-height: 21px;
   color: #000000;
   background-color: #f2f2f2;
-
-  opacity: 0.5;
-  background-image: url("../images/catalog.jpg");  
-  background-repeat: none;
-  background-size: 95%;
-  background-position: 35px 0px;
 }
 
 .page-container {
   display: flex;
   flex-direction: column;
-  width: 1200px;  
+  width: 1200px;
   height: 100%;
-  margin: 0 auto;  
-  background-color: #FFFFFF;  
+  margin: 0 auto;
+  background-color: #FFFFFF;
 }
 
 .visually-hidden {
@@ -75,8 +67,6 @@ body {
   color: #FFFFFF;
 }
 
-
-
 .navigation-link-search {
   width: 42px;
   height: 50px;
@@ -85,22 +75,20 @@ body {
 .navigation-link-favorites {
   width: 42px;
   height: 50px;
-
 }
 
 .navigation-link-button {
-  display: block; 
-  margin-right: 0;    
+  display: block;
+  margin-right: 0;
   width: 160px;
-  height: 37px; 
-  
+  height: 37px;
   font-style: normal;
-font-weight: bold;
-font-size: 16px;
+  font-weight: bold;
+  font-size: 16px;
   line-height: 38px;
   text-decoration: none;
   background-color: #756257;
-  color: #FFFFFF;  
+  color: #FFFFFF;
 }
 
 .subscribe-form-button {
@@ -142,9 +130,7 @@ font-size: 16px;
   width: 45px;
   height: 45px;
   margin-right: 5px;
-  
   border-width: 3px;
-
 }
 
 .button-layout:last-child {
@@ -224,17 +210,15 @@ font-size: 16px;
 }
 
 .logo {
-  margin-right: 48px;  
+  margin-right: 48px;
 }
 
 .navigation-list {
   display: flex;
-  margin-right: 100px;  
+  margin-right: 100px;
   align-items: center;
   flex-wrap: wrap;
-
   line-height: 30px;
-  
 }
 
 .navigation-user {
@@ -245,17 +229,14 @@ font-size: 16px;
 }
 
 .navigation-item {
-  margin-right: 34px;  
+  margin-right: 34px;
 }
 
 .navigation-user li {
   min-width: 42px;
   height: 42px;
   margin-left: auto;
-   
-  }
-
-
+}
 
 
 /* Welcome box */
@@ -319,18 +300,14 @@ font-size: 16px;
   justify-content: flex-start;
 }
 
-
-
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
-  
 }
 
 .advantages-item {
   display: flex;
   width: 400px;
-   
   margin: 0;
   padding: 0;
 }
@@ -429,13 +406,11 @@ font-size: 16px;
 }
 
 .advantages-item:nth-child(1) p {
-  
   width: 220px;
   color: inherit;
 }
 
 .advantages-item:nth-child(2) p {
-  
   width: 220px;
   color: inherit;
 }
@@ -444,7 +419,6 @@ font-size: 16px;
 /*Tips*/
 
 .tips-item {
-  
   width: 400px;
   height: 384px;
   margin: 0;
@@ -642,15 +616,12 @@ font-size: 16px;
 }
 
 .catalog-header {
-
   margin-bottom: 50px;
   padding-left: 7px;
-
 }
 
 .catalog-header h1 {
   margin: 0;
-  
   font-style: normal;
   font-weight: bold;
   font-size: 60px;
@@ -664,7 +635,7 @@ font-size: 16px;
 
 .breadcrumbs-item {
   line-height: 8px;
-  min-width: 14px; 
+  min-width: 14px;
   margin-right: 26px;
 }
 
@@ -781,7 +752,6 @@ font-size: 16px;
 }
 
 .select-control option {
-  
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -907,8 +877,6 @@ font-size: 16px;
   flex-wrap: wrap;
   width: 1056px;
   margin: 0 auto;
- 
-  
 }
 
 .show-more-wrapper {
@@ -927,7 +895,7 @@ font-size: 16px;
 
 .pagination {
   display: flex;
-  flex-grow: 1;  
+  flex-grow: 1;
 }
 
 .pagination-link {
@@ -956,7 +924,6 @@ font-size: 16px;
   height: 100%;
   width: 160px;
   padding-left: 15px;
-  
   font-size: 18px;
 }
 
