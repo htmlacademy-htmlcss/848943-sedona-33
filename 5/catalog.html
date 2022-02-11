@@ -10,10 +10,10 @@
     <div class="page-container">
       <header class="page-header">
         <nav class="navigation">
-          <a href="#">
+          <a class="logo-link" href="#">
           <img class="logo" src="images/logo.svg" alt="Логотип компании." width="139" height="70">
           </a>
-          <ul class="navigation-list">
+          <ul class="navigation-list reset-list">
             <li class="navigation-item">
               <a class="navigation-link" href="index.html">Главная</a>
             </li>
@@ -24,20 +24,19 @@
               <a class="navigation-link  navigation-link-current">Гостиницы</a>
             </li>
           </ul>
-          <ul class="navigation-user">
-            <li class="navigation-item">
+          <ul class="navigation-user reset-list">
+            <li class="navigation-user-item">
               <a class="navigation-link navigation-link-search" href="#">
               <span class="visually-hidden">Поиск</span>
               </a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-user-item">
               <a class="navigation-link navigation-link-favorites" href="#">
-                <span class="visually-hidden">Избранное</span>
-                <!--указывается количество товаров в избранном-->
-                <span class="navigation-favorites-qty" hidden>12</span>
+              <span class="visually-hidden">Избранное</span>               
+              <span class="navigation-favorites-qty" hidden>12</span>
               </a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-user-item">
               <a class="navigation-link-button button" href="#">Хочу сюда!</a>
             </li>
           </ul>
@@ -47,7 +46,7 @@
         <div class="catalog-header-container">
           <header class="catalog-header">
             <h1>Гостиницы Седоны</h1>
-            <ul class="breadcrumbs-list">
+            <ul class="breadcrumbs-list reset-list">
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="index.html">
                 <span class="visually-hidden">Главная</span>
@@ -87,7 +86,7 @@
         </div>
         <section class="catalog-results">
           <div class="catalog-results-layout-wrapper">
-            <h2>Найдено гостинец: 
+            <h2>Найдено гостиниц: 
               <span id="catalog-results-quantity">38</span>
             </h2>
             <select class="select-control" aria-label="Сортировка.">
@@ -107,7 +106,7 @@
               </button>
             </div>
           </div>
-          <ul class="product-list">
+          <ul class="product-list reset-list">
             <li class="product-card">
               <a class="product-card-link" href="#">
                 <h3 class="product-card-title">Amara Resort & Spa</h3>
@@ -134,7 +133,7 @@
                 <h3 class="product-card-title">Desert Quail Inn</h3>
                 <img class="product-card-image" src="images/catalog/hotel-desert-quail-inn.jpg" alt="Гостиница Desert Quail Inn." width="299" height="220">
               </a>
-              <dl class="product-card-description">
+              <dl class="product-card-description reset-list">
                 <dt class="visually-hidden">Тип</dt>
                 <dd class="product-card-type">Гостиница</dd>
                 <dt class="visually-hidden">Цена</dt>
@@ -155,7 +154,7 @@
                 <h3 class="product-card-title">Villas at Poco Diablo</h3>
                 <img class="product-card-image" src="images/catalog/hotel-villas-at-poco-diablo.jpg" alt="Гостиница Villas at Poco Diablo." width="299" height="220">
               </a>
-              <dl class="product-card-description">
+              <dl class="product-card-description reset-list">
                 <dt class="visually-hidden">Тип</dt>
                 <dd class="product-card-type">Гостиница</dd>
                 <dt class="visually-hidden">Цена</dt>
@@ -176,7 +175,7 @@
                 <h3 class="product-card-title">GreenTree Inn</h3>
                 <img class="product-card-image" src="images/catalog/hotel-green-tree-inn.jpg" alt="Гостиница GreenTree Inn." width="299" height="220">
               </a>
-              <dl class="product-card-description">
+              <dl class="product-card-description reset-list">
                 <dt class="visually-hidden">Тип</dt>
                 <dd class="product-card-type">Гостиница</dd>
                 <dt class="visually-hidden">Цена</dt>
@@ -194,7 +193,7 @@
             </li>
           </ul>
           <div class="catalog-pagination-container">
-            <ul class="pagination">
+            <ul class="pagination reset-list">
               <li class="pagination-item pagination-current button">
                 <a class="pagination-link">1</a>
               </li>
@@ -239,7 +238,7 @@
       <footer class="page-footer">
         <section class="footer-social">
           <h2 class="visually-hidden">Мы в соцсетях</h2>
-          <ul class="footer-social-list">
+          <ul class="footer-social-list reset-list">
             <li class="footer-social-item">
               <a class="footer-social-button twitter" href="#">
               <span class="visually-hidden">Twitter</span>
