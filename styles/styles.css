@@ -16,23 +16,33 @@
 
 html {
   height: 100%;
+ 
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+  
   margin: 0;
-  min-height: 100%;
+  height: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
+
+  opacity: 0.5;
+  background-image: url("../images/catalog.jpg");  
+  background-repeat: none;
+  background-size: 95%;
+  background-position: 35px 0px;
 }
 
 .page-container {
-  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  width: 1200px;  
+  height: 100%;
   margin: 0 auto;  
+  background-color: #FFFFFF;  
 }
 
 .visually-hidden {
@@ -48,6 +58,12 @@ body {
   overflow: hidden;
 }
 
+.reset-list {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
 
 /*Buttons*/
 
@@ -59,16 +75,38 @@ body {
   color: #FFFFFF;
 }
 
+
+
+.navigation-link-search {
+  width: 42px;
+  height: 50px;
+}
+
+.navigation-link-favorites {
+  width: 42px;
+  height: 50px;
+
+}
+
 .navigation-link-button {
+  display: block; 
+  margin-right: 0;    
+  width: 160px;
+  height: 37px; 
+  
+  font-style: normal;
+font-weight: bold;
+font-size: 16px;
+  line-height: 38px;
   text-decoration: none;
   background-color: #756257;
-  color: #FFFFFF;
+  color: #FFFFFF;  
 }
 
 .subscribe-form-button {
   width: 200px;
   height: 60px;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 26px;
   background-color: #83B3D3;
 }
@@ -76,7 +114,7 @@ body {
 .catalog-filter-submit {
   width: 160px;
   height: 48px;
-  margin-bottom: 20px;
+  margin-bottom: 9px;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -90,6 +128,7 @@ body {
 .catalog-filter-reset {
   width: 160px;
   height: 48px;
+  margin-bottom: 21px;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -100,9 +139,16 @@ body {
 }
 
 .button-layout {
-  width: 48px;
-  height: 48px;
-  margin-right: 8px;
+  width: 45px;
+  height: 45px;
+  margin-right: 5px;
+  
+  border-width: 3px;
+
+}
+
+.button-layout:last-child {
+  margin-right: 0;
 }
 
 .product-details-button {
@@ -111,7 +157,7 @@ body {
   height: 37px;
   margin: 0;
   font-size: 16px;
-  line-height: 34px;
+  line-height: 36px;
   text-decoration: none;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: #756257;
@@ -120,8 +166,8 @@ body {
 .product-to-favorites-button {
   width: 140px;
   height: 37px;
-  font-size: 16px;
-  line-height: 21px;
+  font-size: 14px;
+  line-height: 20px;
   background-color: #83B3D3;
 }
 
@@ -130,7 +176,7 @@ body {
   height: 37px;
   margin: 0;
   font-size: 16px;
-  line-height: 34px;
+  line-height: 39px;
   background-color: #7DB54F;
 }
 
@@ -139,7 +185,7 @@ body {
   width: 620px;
   height: 60px;
   margin: 30px auto;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 26px;
   background-color: #83B3D3;
 }
@@ -164,6 +210,10 @@ body {
   margin: 0 auto;
 }
 
+.logo-link {
+  line-height: 0;
+}
+
 .navigation-link {
   font-style: normal;
   font-weight: bold;
@@ -174,19 +224,38 @@ body {
 }
 
 .logo {
-  margin-right: 30px;
+  margin-right: 48px;  
 }
 
 .navigation-list {
-  width: 445px;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  margin-right: 100px;  
+  align-items: center;
+  flex-wrap: wrap;
+
+  line-height: 30px;
+  
 }
 
 .navigation-user {
+  display: flex;
+  align-items: center;
   width: 264px;
   margin-left: auto;
 }
+
+.navigation-item {
+  margin-right: 34px;  
+}
+
+.navigation-user li {
+  min-width: 42px;
+  height: 42px;
+  margin-left: auto;
+   
+  }
+
+
 
 
 /* Welcome box */
@@ -226,6 +295,7 @@ body {
 
 .main-container {
   flex-grow: 1;
+  margin-top: -4px;
 }
 
 .main-index h1 {
@@ -249,24 +319,18 @@ body {
   justify-content: flex-start;
 }
 
-.tips {
-  order: -1;
-  /*чтобы расположить блок перед списком преимуществ*/
-  margin-top: 384px;
-  /*чтобы сдвинуть блок вниз и освободить место для первого пункта списка преимуществ*/
-}
+
 
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
+  
 }
 
 .advantages-item {
   display: flex;
   width: 400px;
-  height: 384px;
+   
   margin: 0;
   padding: 0;
 }
@@ -276,14 +340,21 @@ body {
 }
 
 .advantages-wrapper {
-  width: 250px;
+  width: 247px;
+  min-height: 200px;
   margin: 0 auto;
   padding-top: 98px;
+  padding-bottom: 87px;
+}
+
+.advantages-item img {
+  height: 100%;
 }
 
 .advantages h2 {
   order: -1;
   margin: 0 auto;
+  margin-bottom: 80px;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
@@ -294,7 +365,7 @@ body {
 
 .advantages-title {
   display: block;
-  width: 180px;
+  width: 171px;
   margin: 0 auto;
   margin-bottom: 29px;
   font-style: normal;
@@ -306,32 +377,33 @@ body {
 }
 
 .advantages-item:nth-child(1) {
-  margin-top: calc(384px*-2);
-  /*отрицательный верхний отступ для того, чтобы поднять блок и расположить его на месте верхнего отступа tips*/
-  margin-bottom: 384px;
-  /*чтобы освободить место для блока tips*/
+  order: -1;
   width: 1200px;
   background-color: #83B3D3;
   color: #FFFFFF;
 }
 
 .advantages-item:nth-child(2) {
+  order: 1;
   width: 1200px;
   background-color: #83B3D3;
   color: #FFFFFF;
 }
 
 .advantages-item:nth-child(3) {
+  order: 2;
   background-color: rgba(131, 179, 211, 0.12);
   color: inherit;
 }
 
 .advantages-item:nth-child(4) {
+  order: 2;
   background-color: rgba(131, 179, 211, 0.2);
   color: inherit;
 }
 
 .advantages-item:nth-child(5) {
+  order: 2;
   background-color: rgba(131, 179, 211, 0.12);
   color: inherit;
 }
@@ -357,11 +429,13 @@ body {
 }
 
 .advantages-item:nth-child(1) p {
+  
   width: 220px;
   color: inherit;
 }
 
 .advantages-item:nth-child(2) p {
+  
   width: 220px;
   color: inherit;
 }
@@ -369,11 +443,8 @@ body {
 
 /*Tips*/
 
-.tips-list {
-  display: flex;
-}
-
 .tips-item {
+  
   width: 400px;
   height: 384px;
   margin: 0;
@@ -407,8 +478,9 @@ body {
   display: flex;
   flex-direction: column;
   padding-top: 91px;
-  padding-bottom: 91px;
+  padding-bottom: 70px;
   width: 1200px;
+  margin-bottom: 20px;
 }
 
 .hotel-search-header {
@@ -477,6 +549,7 @@ body {
 
 .subscribe-catalog {
   color: #000000;
+  padding-bottom: 140px;
 }
 
 .subscribe h2 {
@@ -488,6 +561,10 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.subscribe-catalog h2 {
+  margin-bottom: 46px;
 }
 
 .subscribe p {
@@ -555,7 +632,7 @@ body {
 /*Catalog header*/
 
 .catalog-header-container {
-  padding: 35px 71px 83px;
+  padding: 35px 65px 50px;
   margin-bottom: 44px;
   color: #FFFFFF;
   background-color: #83B3D3;
@@ -564,8 +641,16 @@ body {
   background-repeat: no-repeat;
 }
 
+.catalog-header {
+
+  margin-bottom: 50px;
+  padding-left: 7px;
+
+}
+
 .catalog-header h1 {
   margin: 0;
+  
   font-style: normal;
   font-weight: bold;
   font-size: 60px;
@@ -574,15 +659,20 @@ body {
 }
 
 .breadcrumbs-list {
-  margin: 0;
-  padding: 0;
+  display: flex;
+}
+
+.breadcrumbs-item {
+  line-height: 8px;
+  min-width: 14px; 
+  margin-right: 26px;
 }
 
 .breadcrumbs-link {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 8px;
   text-decoration: none;
   color: inherit;
 }
@@ -601,18 +691,19 @@ body {
 .catalog-filter-group {
   display: flex;
   flex-direction: column;
+  padding: 0;
 }
 
 .catalog-filter-group:first-child {
-  margin-right: 67px;
+  margin-right: 58px;
 }
 
 .catalog-filter-group:nth-child(2) {
-  margin-right: 167px;
+  margin-right: 160px;
 }
 
 .catalog-filter-group:nth-child(3) {
-  margin-right: 81px;
+  margin-right: 119px;
 }
 
 .catalog-filter-title {
@@ -626,6 +717,7 @@ body {
 
 .catalog-filter-label {
   margin-bottom: 13px;
+  margin-left: 23px;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -653,11 +745,15 @@ body {
 
 /*Catalog results*/
 
+.catalog-results {
+  margin-bottom: -21px;
+}
+
 .catalog-results-layout-wrapper {
   display: flex;
   padding-left: 71px;
   padding-right: 72px;
-  margin-bottom: 53px;
+  margin-bottom: 51px;
 }
 
 .catalog-results h2 {
@@ -666,23 +762,26 @@ body {
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
-  line-height: 39px;
+  line-height: 45px;
   text-transform: uppercase;
   color: inherit;
 }
 
 .select-control {
-  width: 247px;
-  height: 48px;
-  margin-right: 81px;
+  width: 287px;
+  height: 46px;
+  margin-right: 85px;
+  padding-left: 12px;
+  border-width: 2px;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 23px;
   color: #333333;
 }
 
 .select-control option {
+  
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -699,14 +798,16 @@ body {
   flex-wrap: wrap;
   width: 1056px;
   margin: 0 auto;
+  margin-bottom: 28px;
   padding: 0;
+  list-style-type: none;
 }
 
 .product-card {
   width: 300px;
   height: 398px;
   margin-right: 18px;
-  padding: 20px;
+  padding: 25px 20px;
 }
 
 .product-card:nth-child(3n) {
@@ -716,7 +817,7 @@ body {
 .product-card-image {
   width: 300px;
   height: 206px;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .product-card-link {
@@ -762,7 +863,7 @@ body {
 .product-card-price {
   margin: 0;
   margin-bottom: 16px;
-  width: 160px;
+  width: 140px;
 }
 
 .product-card-rating span {
@@ -779,7 +880,7 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 34px;
+  line-height: 38px;
   text-align: center;
   text-transform: uppercase;
   background-color: #F2F2F2;
@@ -806,13 +907,15 @@ body {
   flex-wrap: wrap;
   width: 1056px;
   margin: 0 auto;
+ 
+  
 }
 
 .show-more-wrapper {
   order: -1;
   width: 1056px;
   height: 120px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   border-top: 1px solid #E6E6E6;
   border-bottom: 1px solid #E6E6E6;
 }
@@ -824,14 +927,12 @@ body {
 
 .pagination {
   display: flex;
-  flex-grow: 1;
-  margin: 0;
-  padding: 0;
+  flex-grow: 1;  
 }
 
 .pagination-link {
   font-size: 20px;
-  line-height: 26px;
+  line-height: 55px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
@@ -843,18 +944,19 @@ body {
 }
 
 .cards-quantity-title {
+  margin-right: 46px;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 46px;
+  line-height: 55px;
   color: #333333;
 }
 
 .cards-quantity-control {
   height: 100%;
   width: 160px;
-  padding-left: 17px;
-  float: right;
+  padding-left: 15px;
+  
   font-size: 18px;
 }
 
