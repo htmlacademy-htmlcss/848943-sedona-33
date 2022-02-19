@@ -27,11 +27,7 @@ body {
   color: #000000;
   background-color: #f2f2f2;
 
-  background-image: url("../../catalog.jpg");
-  background-repeat: no-repeat;
-  background-size: 95%;
-  background-position: 35px 0px;
-  opacity: 0.5;
+  
 }
 
 .page-container {
