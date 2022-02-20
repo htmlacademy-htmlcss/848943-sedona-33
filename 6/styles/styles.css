@@ -27,7 +27,6 @@ body {
   color: #000000;
   background-color: #f2f2f2;
 
-  
 }
 
 .page-container {
@@ -99,24 +98,25 @@ body {
 }
 
 .footer-social-button {
-  padding: 20px;
+  padding: 10px 20px;
   outline: 1px solid red;
 }
 
 .subscribe-form-button {
-  width: 200px;
+  min-width: 200px;
   height: 60px;
-  padding-left: 10px;
+  padding-left: 8px;
+  padding-top: 5px;
   font-size: 18px;
   line-height: 26px;
-  background-color: #83B3D3;
-  background: #83B3D3;
+  letter-spacing: -0.8px;
+  background-color: #83B3D3;  
   border: 1px solid transparent;
   border-radius: 0px 10px 10px 0px;
 }
 
 .catalog-filter-submit {
-  width: 160px;
+  min-width: 160px;
   height: 48px;
   margin-bottom: 9px;
 
@@ -131,7 +131,7 @@ body {
 }
 
 .catalog-filter-reset {
-  width: 160px;
+  min-width: 160px;
   height: 48px;
   margin-bottom: 21px;
 
@@ -174,7 +174,7 @@ body {
 }
 
 .product-to-favorites-button {
-  width: 140px;  
+  min-width: 140px;  
   margin: 0 auto;
   margin-bottom: 16px;
   padding: 8px;
@@ -189,13 +189,13 @@ body {
 }
 
 .product-in-favorites-button {
-  width: 137px;
-  min-height: 35px;
+  min-width: 120px;  
   margin: 0;
   margin-bottom: 16px;
+  padding: 8px;
 
   font-size: 16px;
-  line-height: 34px;
+  line-height: 18px;
   background-color: #7DB54F;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -235,13 +235,12 @@ body {
 
 .navigation {
   display: flex;
-  width: 1056px;
+  width: 1057px;
   margin: 0 auto;
 }
 
-.logo-link {
-  margin-left: 5px;
-  margin-right: 48px;
+.logo-link {  
+  margin-right: 46px;
   line-height: 0;
 }
 
@@ -270,7 +269,7 @@ body {
   justify-content: flex-end;
   align-items: center;
   margin-left: auto;
-  margin-right: 4px;
+  margin-right: -4px;
 }
 
 .navigation-item {
@@ -329,9 +328,8 @@ body {
 /*Header*/
 
 .main-container {
-  flex-grow: 1;
-  
-  margin-top: -4px;
+  flex-grow: 1;  
+  margin-top: -4px;  
   background-color: #FFFFFF;
 }
 
@@ -351,15 +349,16 @@ body {
 
 /*Advantages*/
 
-.advantages {
+/* .advantages {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-}
+} */
 
 .advantages-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .advantages-item {
@@ -378,8 +377,8 @@ body {
   flex-direction: column;
   width: 247px;
   margin: 0 auto;
-  padding-top: 97px;
-  padding-bottom: 87px;
+  padding-top: 99px;
+  padding-bottom: 60px;
 }
 
 .advantages-item img {
@@ -403,7 +402,7 @@ body {
 .advantages-title {
   order: -1;
   display: block;
-  width: 240px;
+  width: 172px;
   margin: 0 auto;
   margin-bottom: 30px;
 
@@ -416,48 +415,56 @@ body {
 }
 
 .advantages-item:nth-child(1) {
-  order: -1;
+  grid-column: 1/-1;
   width: 1200px;
   background-color: #83B3D3;
   color: #FFFFFF;
 }
 
 .advantages-item:nth-child(2) {
-  order: 1;
+  grid-column: 1/-1;
+  grid-row: 3/4;
   width: 1200px;
   background-color: #83B3D3;
   color: #FFFFFF;
 }
 
 .advantages-item:nth-child(3) {
-  order: 2;
+  grid-column: 1/2;
+  
   background-color: rgba(131, 179, 211, 0.12);
   color: inherit;
 }
 
 .advantages-item:nth-child(4) {
-  order: 2;
+  grid-column: 2/3;
   background-color: rgba(131, 179, 211, 0.2);
   color: inherit;
 }
 
 .advantages-item:nth-child(5) {
-  order: 2;
+  grid-column: 3/4;
   background-color: rgba(131, 179, 211, 0.12);
   color: inherit;
 }
 
 .advantages-item:nth-child(6) {
+  grid-column: 1/2;
+  grid-row: 2/3;
   background-color: rgba(131, 179, 211, 0.2);
   color: inherit;
 }
 
 .advantages-item:nth-child(7) {
+  grid-column: 2/3;
+  grid-row: 2/3;
   background-color: rgba(131, 179, 211, 0.12);
   color: inherit;
 }
 
 .advantages-item:nth-child(8) {
+  grid-column: 3/4;
+  grid-row: 2/3;
   background-color: rgba(131, 179, 211, 0.2);
   color: inherit;
 }
@@ -465,7 +472,7 @@ body {
 .tips-wrapper {
   min-height: 185px;
   padding-top: 85px;
-  padding-bottom: 90px;
+  padding-bottom: 89px;
 }
 
 .tips-icon {
@@ -480,14 +487,14 @@ body {
 
 .tips-wrapper .advantages-title {
   width: 250px;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .advantages-number {
   display: block;
   width: 220px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   text-align: center;
 }
 
@@ -495,7 +502,7 @@ body {
   display: block;
   margin: 0 auto;
   width: 250px;
-
+  
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -534,7 +541,7 @@ body {
   display: block;
   width: 720px;
   margin: 0 auto;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
   
 
   font-style: normal;
@@ -551,7 +558,7 @@ body {
   width: 720px;
   padding-right: 11px;
   margin: 0 auto;
-  margin-bottom: 56px;
+  margin-bottom: 57px;
 
   font-style: normal;
   font-weight: normal;
@@ -648,7 +655,7 @@ body {
 .subscribe-form input {
   width: 570px;
   height: 47px;
-  padding: 5px 10px 5px 20px;
+  padding: 8px 10px 2px 20px;
   margin-right: -5px;
 }
 
@@ -675,9 +682,21 @@ body {
 /*Footer*/
 
 .page-footer {
+  display: grid;
+  grid-template-columns: 1fr 600px 160px;
+  padding: 43px 62px;
+}
+
+.footer-social {
   display: flex;
-  justify-content: space-between;
-  padding: 41px 70px 30px 70px;
+}
+
+.footer-contacts {
+  padding-left: 58px;
+}
+
+.footer-copyright {
+  padding-left: 36px;
 }
 
 .footer-contacts-phone {
@@ -722,7 +741,7 @@ body {
   color: #FFFFFF;
   background-color: #83B3D3;
   background-image: url("../images/catalog/catalog-background.jpg");
-  background-size: auto 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -797,7 +816,8 @@ body {
 }
 
 .catalog-filter-group:nth-child(3) {
-  margin-right: 120px;
+  width: 300px;
+  margin-right: 70px;
 }
 
 .catalog-filter-title {
@@ -811,7 +831,7 @@ body {
   color: inherit;
 }
 
-.catalog-filter-label {
+.catalog-filter-label {  
   margin-bottom: 13px;
   margin-left: 23px;
 
@@ -912,8 +932,8 @@ body {
   width: 300px;
   min-height: 398px;
   margin-right: 18px;
-  margin-bottom: 6px;
-  padding: 20px 20px;
+  margin-bottom: 11px;
+  padding: 20px 20px 0px;
 }
 
 .product-card:nth-child(3n) {
@@ -984,12 +1004,14 @@ body {
 .product-card-rating {
   order: 2;
   margin: 0;
-  width: 160px;  
+  min-width: 142px;  
+  padding: 8px;
+  margin-bottom: 16px;  
 
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 38px;
+  line-height: 21px;
   text-align: center;
   text-transform: uppercase;
   background-color: #F2F2F2;
@@ -999,6 +1021,7 @@ body {
 .product-card-stars {
   order: 2;
   margin: 0; 
+  margin-bottom: 16px;
   width: 133px;
   height: 37px;
 
