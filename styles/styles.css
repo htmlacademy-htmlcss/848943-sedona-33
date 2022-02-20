@@ -26,6 +26,7 @@ body {
   line-height: 21px;
   color: #000000;
   background-color: #f2f2f2;
+
 }
 
 .page-container {
@@ -115,7 +116,7 @@ body {
 }
 
 .catalog-filter-submit {
-  width: 160px;
+  min-width: 160px;
   height: 48px;
   margin-bottom: 9px;
 
@@ -130,7 +131,7 @@ body {
 }
 
 .catalog-filter-reset {
-  width: 160px;
+  min-width: 160px;
   height: 48px;
   margin-bottom: 21px;
 
@@ -173,7 +174,7 @@ body {
 }
 
 .product-to-favorites-button {
-  width: 140px;  
+  min-width: 140px;  
   margin: 0 auto;
   margin-bottom: 16px;
   padding: 8px;
@@ -188,13 +189,13 @@ body {
 }
 
 .product-in-favorites-button {
-  width: 137px;
-  min-height: 35px;
+  min-width: 120px;  
   margin: 0;
   margin-bottom: 16px;
+  padding: 8px;
 
   font-size: 16px;
-  line-height: 34px;
+  line-height: 18px;
   background-color: #7DB54F;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -931,8 +932,8 @@ body {
   width: 300px;
   min-height: 398px;
   margin-right: 18px;
-  margin-bottom: 6px;
-  padding: 20px 20px;
+  margin-bottom: 11px;
+  padding: 20px 20px 0px;
 }
 
 .product-card:nth-child(3n) {
@@ -1003,12 +1004,14 @@ body {
 .product-card-rating {
   order: 2;
   margin: 0;
-  width: 160px;  
+  min-width: 142px;  
+  padding: 8px;
+  margin-bottom: 16px;  
 
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 38px;
+  line-height: 21px;
   text-align: center;
   text-transform: uppercase;
   background-color: #F2F2F2;
@@ -1018,6 +1021,7 @@ body {
 .product-card-stars {
   order: 2;
   margin: 0; 
+  margin-bottom: 16px;
   width: 133px;
   height: 37px;
 
