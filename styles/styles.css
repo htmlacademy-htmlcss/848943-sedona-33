@@ -26,8 +26,6 @@ body {
   line-height: 21px;
   color: #000000;
   background-color: #f2f2f2;
-
-  
 }
 
 .page-container {
@@ -104,13 +102,14 @@ body {
 }
 
 .subscribe-form-button {
-  width: 200px;
+  min-width: 200px;
   height: 60px;
-  padding-left: 10px;
+  padding-left: 8px;
+  padding-top: 5px;
   font-size: 18px;
   line-height: 26px;
-  background-color: #83B3D3;
-  background: #83B3D3;
+  letter-spacing: -0.8px;
+  background-color: #83B3D3;  
   border: 1px solid transparent;
   border-radius: 0px 10px 10px 0px;
 }
@@ -235,13 +234,12 @@ body {
 
 .navigation {
   display: flex;
-  width: 1056px;
+  width: 1057px;
   margin: 0 auto;
 }
 
-.logo-link {
-  margin-left: 5px;
-  margin-right: 48px;
+.logo-link {  
+  margin-right: 46px;
   line-height: 0;
 }
 
@@ -270,7 +268,7 @@ body {
   justify-content: flex-end;
   align-items: center;
   margin-left: auto;
-  margin-right: 4px;
+  margin-right: -4px;
 }
 
 .navigation-item {
@@ -379,8 +377,8 @@ body {
   flex-direction: column;
   width: 247px;
   margin: 0 auto;
-  padding-top: 97px;
-  padding-bottom: 87px;
+  padding-top: 99px;
+  padding-bottom: 60px;
 }
 
 .advantages-item img {
@@ -404,7 +402,7 @@ body {
 .advantages-title {
   order: -1;
   display: block;
-  width: 240px;
+  width: 172px;
   margin: 0 auto;
   margin-bottom: 30px;
 
@@ -474,7 +472,7 @@ body {
 .tips-wrapper {
   min-height: 185px;
   padding-top: 85px;
-  padding-bottom: 90px;
+  padding-bottom: 89px;
 }
 
 .tips-icon {
@@ -489,14 +487,14 @@ body {
 
 .tips-wrapper .advantages-title {
   width: 250px;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .advantages-number {
   display: block;
   width: 220px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   text-align: center;
 }
 
@@ -504,7 +502,7 @@ body {
   display: block;
   margin: 0 auto;
   width: 250px;
-
+  
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -543,7 +541,7 @@ body {
   display: block;
   width: 720px;
   margin: 0 auto;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
   
 
   font-style: normal;
@@ -560,7 +558,7 @@ body {
   width: 720px;
   padding-right: 11px;
   margin: 0 auto;
-  margin-bottom: 56px;
+  margin-bottom: 57px;
 
   font-style: normal;
   font-weight: normal;
@@ -657,7 +655,7 @@ body {
 .subscribe-form input {
   width: 570px;
   height: 47px;
-  padding: 5px 10px 5px 20px;
+  padding: 8px 10px 2px 20px;
   margin-right: -5px;
 }
 
@@ -686,7 +684,7 @@ body {
 .page-footer {
   display: flex;
   justify-content: space-between;
-  padding: 41px 70px 30px 70px;
+  padding: 43px 70px 30px 70px;
 }
 
 .footer-contacts-phone {
@@ -731,7 +729,7 @@ body {
   color: #FFFFFF;
   background-color: #83B3D3;
   background-image: url("../images/catalog/catalog-background.jpg");
-  background-size: auto 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -806,7 +804,8 @@ body {
 }
 
 .catalog-filter-group:nth-child(3) {
-  margin-right: 120px;
+  width: 300px;
+  margin-right: 70px;
 }
 
 .catalog-filter-title {
@@ -820,7 +819,7 @@ body {
   color: inherit;
 }
 
-.catalog-filter-label {
+.catalog-filter-label {  
   margin-bottom: 13px;
   margin-left: 23px;
 
