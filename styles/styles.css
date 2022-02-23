@@ -27,6 +27,14 @@ body {
   color: #000000;
   background-color: #f2f2f2;
 
+  background-image: url("../../index.jpg");
+  background-repeat: no-repeat;
+  background-size: 95%;
+  background-position: 35px 0px;
+  opacity: 0.5;
+
+
+
 }
 
 .page-container {
@@ -61,11 +69,14 @@ body {
 /*Buttons*/
 
 .button {
+  display: inline-block;
   font-style: normal;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  border: none;
+  cursor: pointer;
 }
 
 .navigation-link-search {
@@ -683,7 +694,7 @@ body {
 
 .page-footer {
   display: grid;
-  grid-template-columns: 1fr 600px 160px;
+  grid-template-columns: 1fr 1fr 1fr;
   padding: 43px 62px;
 }
 
@@ -692,11 +703,12 @@ body {
 }
 
 .footer-contacts {
-  padding-left: 58px;
+  margin-left: 15px;
 }
 
 .footer-copyright {
-  padding-left: 36px;
+  margin-left: auto;
+  margin-right: 8px;
 }
 
 .footer-contacts-phone {
