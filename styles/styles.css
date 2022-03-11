@@ -26,7 +26,6 @@ body {
   line-height: 21px;
   color: #000000;
   background-color: #f2f2f2;
-
 }
 
 .page-container {
@@ -57,7 +56,6 @@ body {
   padding-left: 0;
   list-style-type: none;
 }
-
 
 /*Buttons*/
 
@@ -132,6 +130,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+  word-wrap: break-word;
 
   border-radius: 4px;
 }
@@ -144,6 +143,7 @@ body {
 
 .brown-button:hover {
   background-color: #615048;
+  border-color: #615048;
 }
 
 .brown-button:focus {
@@ -209,6 +209,7 @@ body {
 
 .subscribe-form-button:hover {
   background-color: #68A2CA;  
+  border-color: #68A2CA; 
 }
 
 .subscribe-form-button:focus,
@@ -220,6 +221,7 @@ body {
 
 .subscribe-form-button:active {
   background-color: #68A2CA;
+  border-color: #68A2CA;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -247,6 +249,7 @@ body {
 
 .catalog-filter-submit:hover {
   background-color: #68A2CA;
+  border-color: #68A2CA;
 }
 
 .catalog-filter-submit:focus {
@@ -256,6 +259,7 @@ body {
 
 .catalog-filter-submit:active {
   background-color: #68A2CA;
+  border-color: #68A2CA;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -304,8 +308,8 @@ body {
   box-sizing: border-box;
   border-radius: 4px;
   background-color: #ffffff;
-
   background-repeat: no-repeat;  
+  cursor: pointer;
 }
 
 .button-layout:last-child {
@@ -358,6 +362,7 @@ body {
 
 .product-details-button:hover {
   background-color: #615048;
+  border-color: #615048;
 }
 
 .product-details-button:focus {
@@ -391,10 +396,15 @@ body {
   border: 1px solid #756257;
 }
 
-.product-to-favorites-button:focus,
-.product-to-favorites-button:active {  
+.product-to-favorites-button:focus{  
   background-color: #68A2CA;
   border: 3px solid #756257 ;  
+}
+
+.product-to-favorites-button:active { 
+  padding: 8px 8px 7px 8px;  
+  background-color: #68A2CA;
+  border: 1px solid #756257 ;  
 }
 
 .product-in-favorites-button {
@@ -412,6 +422,7 @@ body {
 
 .product-in-favorites-button:hover {
   background-color: #6C9E42;
+  border-color: #6C9E42;
 }
 
 .product-in-favorites-button:focus {
@@ -504,7 +515,7 @@ body {
 
 .logo-link { 
   width: 140px;
-  margin-right: 46px;
+  margin-right: 46px;  
   line-height: 0;
 }
 
@@ -527,6 +538,7 @@ body {
 .navigation-list {
   display: flex;
   margin-right: 100px;
+  margin-bottom: 5px;
   align-items: center;
   flex-wrap: wrap;
   line-height: 30px;
@@ -540,19 +552,18 @@ body {
 }
 
 .navigation-item {
-  margin-right: 35px;
-  height: 70px;  
+  margin-right: 34px;  
 }
 
-.navigation-user li {  
-  height: 66px;
+.navigation-user li {   
   width: 42px;  
 }
 
 .navigation-user li:last-child {
   min-width: 160px;
   margin-right: 0;
-  margin-left: 20px;    
+  margin-left: 20px; 
+  margin-bottom: 5px;   
 }
 
 .navigation-link-current {
@@ -603,19 +614,19 @@ body {
 
 .main-container {
   flex-grow: 1;  
-  margin-top: -4px;  
+  margin-top: -5px;  
   background-color: #FFFFFF;
 }
 
 .main-index h1 {  
   display: block;
   width: 720px;
-  margin: 0 auto 30px;
-
+  margin: 0 auto 31px;
+  
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
-  line-height: 36px;
+  line-height: 36px;  
   text-align: center;
   text-transform: uppercase;  
 }
@@ -625,7 +636,7 @@ body {
 .advantages-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;  
 }
 
 .advantages-item {
@@ -657,11 +668,11 @@ body {
   width: 720px;
   margin: 0 auto;
   margin-bottom: 80px;  
-
+  
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
-  line-height: 36px;
+  line-height: 36px;  
   text-align: center;
   color: #333333;
 }
@@ -738,8 +749,8 @@ body {
 
 .tips-wrapper {
   min-height: 185px;
-  padding-top: 85px;
-  padding-bottom: 89px;
+  padding-top: 84px;
+  padding-bottom: 90px;
 }
 
 .tips-icon {  
@@ -754,17 +765,17 @@ body {
 
 .home {
   background-image: url("../images/tips.svg");   
-  background-position: -24px -26px;
+  background-position: -23px -25px;
 }
 
 .food {
   background-image: url("../images/tips.svg"); 
-  background-position: -116px -26px; 
+  background-position: -115px -24px; 
 }
 
 .souvenir {
   background-image: url("../images/tips.svg");  
-  background-position: -208px -26px; 
+  background-position: -206px -25px; 
 }
 
 .tips-wrapper .advantages-title {
@@ -776,7 +787,7 @@ body {
   display: block;
   width: 220px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   text-align: center;
 }
 
@@ -785,6 +796,7 @@ body {
   margin: 0 auto;
   width: 250px;
   
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -838,7 +850,7 @@ body {
   width: 720px;
   padding-right: 14px;
   margin: 0 auto;
-  margin-bottom: 57px;
+  margin-bottom: 56px;
 
   font-style: normal;
   font-weight: normal;
@@ -913,7 +925,7 @@ body {
 .subscribe p {
   width: 540px;
   margin: 0 auto;
-  margin-bottom: 46px;
+  margin-bottom: 47px;
 
   font-style: normal;
   font-weight: normal;
@@ -924,6 +936,7 @@ body {
 
 .subscribe-catalog p {
   color: #333333;
+  margin-bottom: 45px;
 }
 
 .subscribe-form {
@@ -944,7 +957,7 @@ body {
   border: 3px solid #F2F2F2;
   border-radius: 10px 0px 0px 10px;
   border-right: 0;
-
+  
   background-color: #F2F2F2;
   color: rgba(0, 0, 0, 0.6);  
 }
@@ -961,6 +974,7 @@ body {
 
 .subscribe-form input:hover {
   background-color: #E5E5E5;
+  border-color: #E5E5E5;
 }
 
 .subscribe-form input:focus,
@@ -1522,6 +1536,7 @@ input[type="checkbox"]:checked + .control-mark-housing:focus {
   border: 2px solid #E5E5E5;
   box-sizing: border-box;
   border-radius: 4px;
+  background-color: transparent; 
   
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1536,6 +1551,7 @@ input[type="checkbox"]:checked + .control-mark-housing:focus {
   font-size: 18px;
   line-height: 23px;
   color: #333333;
+  background-color: transparent;
 }
 
 .select-control-wrapper {
@@ -1767,6 +1783,7 @@ input[type="checkbox"]:checked + .control-mark-housing:focus {
   border: 2px solid #E6E6E6;
   box-sizing: border-box;
   border-radius: 4px;
+  background-color: transparent;
 
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1780,6 +1797,7 @@ input[type="checkbox"]:checked + .control-mark-housing:focus {
   font-size: 18px;
   line-height: 23px;
   color: #333333;
+  background-color: transparent;
 }
 
 .cards-quantity-wrapper::after {
@@ -1798,9 +1816,7 @@ input[type="checkbox"]:checked + .control-mark-housing:focus {
 
 /*modal */
 
-.modal-container {
-  visibility: hidden;
-
+.modal-container {   
   position: fixed;
   top: 0;
   left: 0;
@@ -1811,11 +1827,20 @@ input[type="checkbox"]:checked + .control-mark-housing:focus {
   
 }
 
-.modal {
+.modal-hide {
+  display: none;
+}
+
+.modal-show {
+  display: block;
+}
+
+.modal {  
+  display: inline-block;
   position: relative;
-  left: 0%;
-  top: 0%;
-  
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);    
   margin: auto;
   padding: 60px 70px 70px 65px;  
   
@@ -1861,6 +1886,7 @@ input[type="checkbox"]:checked + .control-mark-housing:focus {
 }
 
 .modal-title {
+  display: inline-block;
   margin: 0;  
   margin-bottom: 60px;
   margin-left: 3px;
@@ -1874,7 +1900,7 @@ input[type="checkbox"]:checked + .control-mark-housing:focus {
   text-transform: uppercase;
 }
 
-.auth-form-list {
+.auth-form {  
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto auto auto;
@@ -1883,9 +1909,8 @@ input[type="checkbox"]:checked + .control-mark-housing:focus {
   list-style: none;
 }
 
-.auth-form-list li {
-  display: flex;
-  flex-direction: row;
+.auth-form div {
+  display: flex;  
 }
 
 .auth-item-checkin {
@@ -1904,26 +1929,25 @@ input[type="checkbox"]:checked + .control-mark-housing:focus {
   grid-column: 3/-1;
 }
 
-.auth-form-list li:last-child {
+.auth-form-list div:last-child {
   grid-column: 1/-1;
 }
 
 .auth-label {
   min-width: 150px;
   padding: 5px;
-}
-
-.auth-input-wrapper {
-  width: 420px;
-}
-
-.auth-label-descr {
   margin: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 40px;
+}
+
+.auth-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 420px;
 }
 
 .auth-tooltip {  
@@ -1940,7 +1964,7 @@ input[type="checkbox"]:checked + .control-mark-housing:focus {
   color: #FF5757;
 }
 
-.auth-visible-date {      
+.auth-input {      
   display: block;
   padding: 5px 20px 5px 20px;
   padding-left: 20px;
@@ -1955,21 +1979,22 @@ input[type="checkbox"]:checked + .control-mark-housing:focus {
   background-image: url("../images/popup-calendar.svg");
   background-repeat: no-repeat;
   background-position: 387px 18px;
+  border: none;
   border-radius: 4px;
 }
 
-.auth-visible-date:hover {
+.auth-input:hover {
   background-color: #E6E6E6;
 }
 
-.auth-visible-date:focus {
+.auth-input:focus {
   background-color: #E6E6E6;
   outline: 3px solid #83B3D3;
 }
 
-.auth-visible-date:active {
+.auth-input:active {
   background-color: #FFFFFF;
-  outline: 2px solid #000000;
+  outline: 3px solid #000000;
 }
 
 .auth-button-wrapper {  
@@ -2063,7 +2088,8 @@ input[type="checkbox"]:checked + .control-mark-housing:focus {
 
 .auth-button {
   width: 45px;   
-  border: none;  
+  border: none; 
+  background-color: #f2f2f2; 
 }
 
 .auth-button-minus {
@@ -2098,6 +2124,7 @@ input[type="checkbox"]:checked + .control-mark-housing:focus {
 }
 
 .auth-submit-button {
+  grid-column: 1/-1;
   margin-top: 40px;
   margin-left: 5px;
   width: 575px;
