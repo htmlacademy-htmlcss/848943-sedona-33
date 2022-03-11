@@ -184,7 +184,7 @@
       </footer>
 
 <!-- Modal -->
-      <div class="modal-container">
+      <div class="modal-container modal-hide">
         <div class="modal">
           <button class="modal-close-button">
             <span class="visually-hidden">Закрыть</span>
@@ -194,78 +194,65 @@
           </button>
           <section class="modal-content">
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-            <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">            
-               <ul class="auth-form-list">
-                 <li class="auth-item-checkin">
-                    <label class="auth-label" for="auth-checkin">
-                      <span class="auth-label-descr">Дата заезда:</span>
-                    </label>
-                    <div class="auth-input-wrapper">
-                      <span class="auth-visible-date" hidden>27 апреля 2020</span>
-                      <input class="visually-hidden" type="date" id="auth-checkin" name="auth-checkin">                   
-                      <span class="auth-tooltip auth-tooltip-error">Мы не можем отправить вас в прошлое.</span> 
-                    </div>
-                  </li>
-                  <li class="auth-item-checkout">                  
-                    <label class="auth-label" for="auth-checkout">
-                      <span class="auth-label-descr">Дата выезда:</span>
-                    </label>
-                    <div class="auth-input-wrapper">
-                      <span class="auth-visible-date" hidden>1 сентября 2021</span>
-                      <input class="visually-hidden" type="date" id="auth-checkout" name="auth-checkout">                  
-                      <span class="auth-tooltip">На эти даты есть свободные номера. Пока есть.</span>      
-                    </div>
-                  </li>
-                  <li class="auth-item-adults">                
-                    <label class="auth-label" for="auth-adults">
-                      <span class="auth-label-descr">Взрослые:</span>
-                    </label>
-                      <input class="visually-hidden" type="number" step="1" id="auth-adults" name="auth-adults" value="2">
-                      <div class="auth-button-wrapper">
-                        <button class="auth-button auth-button-minus">
-                          <svg aria-hidden="true" focusable="false" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0v1h13V0H0Z" fill="#000"/>
-                          </svg>
-                        </button>
-                        <span class="auth-visible-qty">2</span>
-                        <button class="auth-button auth-button-plus">
-                          <svg  aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000"/>
-                          </svg>
-                        </button>
-                    </div>
-                  </li>                 
-                  <li class="auth-item-kids">
-                    <label class="auth-label auth-label-kids" for="auth-kids">
-                      <span class="auth-label-descr">Дети:</span>
-                      <span class="auth-label-info"></span>
-                      <span class="auth-label-details">
-                        Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.                        
-                      </span>
-                    </label>
-                      <input class="visually-hidden" type="number" step="1" id="auth-kids" name="auth-kids" value="1" >
-                      <div class="auth-button-wrapper">
-                        <button class="auth-button auth-button-minus">
-                          <svg  aria-hidden="true" focusable="false" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0v1h13V0H0Z" fill="#000"/>
-                          </svg>
-                        </button>
-                        <span class="auth-visible-qty">1</span>
-                        <button class="auth-button auth-button-plus">
-                          <svg  aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000"/>
-                          </svg>
-                        </button>
-                    </div>
-                  </li>                  
-                  <li>                
-                    <button class="auth-submit-button" type="submit">Найти</button>
-                  </li> 
-                </ul>
+            <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="auth-item-checkin">
+                <label class="auth-label" for="auth-checkin">Дата заезда:</label>
+                <div class="auth-input-wrapper">                      
+                  <input class="auth-input" type="text" id="auth-checkin" name="auth-checkin" placeholder="Укажите дату" value="27 апреля 2020">                   
+                  <span class="auth-tooltip auth-tooltip-error">Мы не можем отправить вас в прошлое.</span> 
+                </div>
+              </div>
+              <div class="auth-item-checkout">
+                <label class="auth-label" for="auth-checkout">Дата выезда:</label>
+                <div class="auth-input-wrapper">                      
+                  <input class="auth-input" type="text" id="auth-checkout" name="auth-checkout" placeholder="Укажите дату" value="1 сентября 2021">                  
+                  <span class="auth-tooltip">На эти даты есть свободные номера. Пока есть.</span>      
+                </div>
+              </div>
+              <div class="auth-item-adults">
+                <label class="auth-label" for="auth-adults">Взрослые:</label>                    
+                <input class="visually-hidden" type="number" step="1" id="auth-adults" name="auth-adults" value="2">
+                <div class="auth-button-wrapper">
+                  <button class="auth-button auth-button-minus" type="button">
+                    <svg aria-hidden="true" focusable="false" width="13" height="2" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0v1h13V0H0Z" fill="#000"/>
+                    </svg>
+                  </button>
+                  <span class="auth-visible-qty">2</span>
+                  <button class="auth-button auth-button-plus" type="button">
+                    <svg  aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="auth-item-kids">
+                <label class="auth-label auth-label-kids" for="auth-kids">Дети:                      
+                <span class="auth-label-info"></span>
+                <span class="auth-label-details">
+                Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.                        
+                </span>
+                </label>
+                <input class="visually-hidden" type="number" step="1" id="auth-kids" name="auth-kids" value="1" >
+                <div class="auth-button-wrapper">
+                  <button class="auth-button auth-button-minus" type="button">
+                    <svg  aria-hidden="true" focusable="false" width="13" height="2" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0v1h13V0H0Z" fill="#000"/>
+                    </svg>
+                  </button>
+                  <span class="auth-visible-qty">1</span>
+                  <button class="auth-button auth-button-plus" type="button">
+                    <svg  aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <button class="auth-submit-button" type="submit">Найти</button>              
             </form>
           </section>
         </div>
-      </div>     
-    </div>    
+      </div>
+    </div>
   </body>
 </html>
