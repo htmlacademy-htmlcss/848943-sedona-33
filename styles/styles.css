@@ -1837,10 +1837,7 @@ input[type="checkbox"]:checked + .control-mark-housing:focus {
 
 .modal {  
   display: inline-block;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);    
+  position: relative; 
   margin: auto;
   padding: 60px 70px 70px 65px;  
   
